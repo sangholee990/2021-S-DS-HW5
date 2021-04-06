@@ -134,6 +134,7 @@ void deQueue(QueueType *cQ, element *item)
     }
     else{
     	cQ->front=((cQ->front)+1)% MAX_QUEUE_SIZE; //front 값을 증가시킨다  
+	cQ->queue[cQ->front] = '\0'; ////front 인덱스에 있는 값을 없앤다.    
 	}
 
 }
